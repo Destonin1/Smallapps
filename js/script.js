@@ -66,6 +66,10 @@ $(document).ready(function(){
 
  $(".phone_menu_header").on("click","a", function (event) {
         event.preventDefault();
+        $('.menu_btn').toggleClass('menu_btn_active');
+        $('.phone_menu').toggleClass('phone_menu_active');
+        $('.contacts_header').toggleClass('contacts_header_active');
+        $('#header').toggleClass('header_underline');
         var id  = $(this).attr('href'),
         top = $(id).offset().top;
         $('body,html').animate({ scrollTop: top}, 500);
