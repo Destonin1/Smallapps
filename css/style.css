@@ -335,15 +335,22 @@ body {
     background: #b5bcbc;
 }
 
+#input_range::-moz-range-track {
+    height: 4px;
+    background: #b5bcbc;
+}
+
+#input_range::-ms-track {
+    height: 4px;
+    background: #b5bcbc;
+}
+
 #input_range::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
     width: 110px;
     height: 12px;
     background: #5dca88;
     transition: 0.5s all;
-    transform: translateY(-4px);
+	border-radius: 0;
 }
 
 #input_range::-moz-range-thumb {
@@ -351,6 +358,7 @@ body {
     height: 12px;
     background: #5dca88;
     transition: 0.5s all;
+	border-radius: 0;
 }
 
 #input_range::-ms-thumb {
@@ -358,6 +366,7 @@ body {
     height: 12px;
     background: #5dca88;
     transition: 0.5s all;
+	border-radius: 0;
 }
 
 /* FEATIRE */
